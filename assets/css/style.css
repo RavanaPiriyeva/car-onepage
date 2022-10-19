@@ -1,0 +1,458 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  background-image: linear-gradient(rgba(12, 12, 12, 0.74), rgba(2, 2, 2, 0.089)), url(../img/6c1d8510b5c7098349eb27b1334c70fe.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header button {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 5px;
+  color: white;
+  font-size: 16px;
+  transition: all 1s;
+}
+header button:hover {
+  box-shadow: 0px 0px 15px 10px;
+}
+header .navbar {
+  position: fixed;
+  background-color: rgb(151, 20, 20);
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .navbar .logo h1 {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+header .navbar .nav {
+  width: 30%;
+}
+header .navbar .nav ul {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  font-size: 18px;
+}
+header .navbar .nav ul a {
+  text-decoration: none;
+  color: white;
+}
+header .navbar .nav li {
+  list-style: none;
+  transition: all 0.5s;
+}
+header .navbar .nav li:hover {
+  text-shadow: 1px 1px 10px white;
+}
+header #slider {
+  padding: 118px 20px;
+  text-align: end;
+  color: white;
+}
+header #slider h1 {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 3.3s;
+          animation-duration: 3.3s;
+}
+header #slider p {
+  margin: 40px 0;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  line-height: 30px;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+header #slider button {
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 2.7s;
+          animation-duration: 2.7s;
+}
+
+main {
+  background-color: black;
+  color: white;
+  padding: 0 30px;
+}
+main #about h1 {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+main #about .content {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main #about .content div {
+  width: 40%;
+}
+main #about .content div p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main #about .content div img {
+  max-width: 100%;
+}
+main #benefit {
+  background-color: rgb(19, 19, 24);
+}
+main #benefit .benefit {
+  position: relative;
+  overflow: hidden;
+}
+main #benefit .benefit .circle1,
+main #benefit .benefit .circle2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(0, 255, 128);
+  border-radius: 50%;
+}
+main #benefit .benefit .circle1 div,
+main #benefit .benefit .circle2 div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(0, 110, 255);
+  border-radius: 50%;
+  position: absolute;
+}
+main #benefit .benefit .circle2 {
+  bottom: -55px;
+  right: -45px;
+}
+main #benefit .benefit .circle2 div {
+  bottom: 15px;
+  right: 15px;
+}
+main #benefit .benefit .circle1 {
+  top: -55px;
+  left: -45px;
+}
+main #benefit .benefit .circle1 div {
+  left: 15px;
+  top: 15px;
+}
+main #benefit h1 {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2px;
+  padding: 50px 0 0 0;
+}
+main #benefit p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+}
+main #benefit .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 70px 0;
+}
+main #benefit .content .item1,
+main #benefit .content .item2,
+main #benefit .content .item3 {
+  width: 20%;
+  text-align: center;
+  position: relative;
+  padding: 70px 0 0 0;
+  border-radius: 5px;
+}
+main #benefit .content .item1 .img,
+main #benefit .content .item2 .img,
+main #benefit .content .item3 .img {
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  transform: translate(-50%, 0);
+  max-width: 100px;
+}
+main #benefit .content .item1 .img img,
+main #benefit .content .item2 .img img,
+main #benefit .content .item3 .img img {
+  max-width: 100%;
+}
+main #benefit .content .item1 h3,
+main #benefit .content .item2 h3,
+main #benefit .content .item3 h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 0 0 0;
+}
+main #benefit .content .item1 {
+  background-color: rgb(38, 177, 123);
+}
+main #benefit .content .item2 {
+  background-color: rgb(168, 37, 37);
+}
+main #benefit .content .item3 {
+  background-color: rgb(29, 79, 155);
+}
+main #benefit .content .item3 .img {
+  max-width: 80px;
+}
+main #car {
+  margin: 50px 0 0 0;
+}
+main #car h1 {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+  padding: 50px 0 0 0;
+}
+main #car p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+}
+main #car .content {
+  margin: 50px 0;
+}
+main #car .item {
+  width: 90%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 0 auto;
+}
+main #car .item .img {
+  height: 230px;
+  overflow: hidden;
+  -o-object-position: center;
+     object-position: center;
+}
+main #car .item .img img {
+  max-height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #video {
+  padding: 50px 0;
+  overflow: hidden;
+}
+main #video .video {
+  position: relative;
+}
+main #video .video .circle1,
+main #video .video .circle2 {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 2px solid rgb(0, 255, 128);
+  transform: rotate(40deg);
+}
+main #video .video .circle1 div,
+main #video .video .circle2 div {
+  width: 130px;
+  height: 130px;
+  border: 2px solid rgb(0, 255, 128);
+  transform: rotate(20deg);
+  position: absolute;
+}
+main #video .video .circle2 {
+  bottom: -55px;
+  right: -45px;
+  z-index: 1;
+  border: 3px solid rgb(0, 255, 128);
+}
+main #video .video .circle2 div {
+  bottom: 15px;
+  right: 15px;
+  border: 3px solid rgb(0, 255, 128);
+}
+main #video .video .circle1 {
+  top: -55px;
+  left: -45px;
+}
+main #video .video .circle1 div {
+  left: 15px;
+  top: 15px;
+}
+main #video .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0 30px 0;
+}
+main #video .text h1 {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+main #video .text p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+  width: 20%;
+  letter-spacing: 5px;
+}
+main #video .img {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main #video .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 80%;
+     object-position: 0 80%;
+}
+main #video .img .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  background-color: rgba(255, 255, 255, 0.274);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main #video .img .icon i {
+  transform: translate(90%, 40%);
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+footer .map {
+  padding: 50px 0 0 0;
+}
+footer .map iframe {
+  width: 100%;
+}
+footer .text {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .text h1 {
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+footer .text ul {
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+footer .text ul li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 25px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+footer .text ul li:hover {
+  text-shadow: 1px 1px 10px white;
+  padding-left: 5px;
+}
+footer .text ul .icon {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 15px;
+  text-shadow: 1px 1px 20px white;
+}
+footer .text ul .icon:hover {
+  padding: 0;
+}
+footer .text ul .icon i:hover {
+  text-shadow: 1px 1px 20px rgb(255, 0, 0);
+}
+footer .text h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+footer .text .gettop {
+  padding: 20px;
+  text-align: center;
+}
+footer .text .gettop .img {
+  background-color: rgb(151, 20, 20);
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  position: -webkit-sticky;
+  position: sticky;
+}
+footer .text .gettop:hover {
+  padding: 20px;
+  opacity: 0.5;
+}
+footer .bottom {
+  background-color: rgb(19, 18, 18);
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 15px;
+}
+footer .bottom .main {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@-webkit-keyframes example {
+  0% {
+    margin-right: 50%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+
+@keyframes example {
+  0% {
+    margin-right: 50%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
